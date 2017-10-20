@@ -4,6 +4,10 @@
   <%= @task.title %>
 </p>
 
+<%= link_to 'Edit', edit_task_path %><br>
+<%= link_to 'Delete', task_path,
+              method: :delete,
+              data: {confirm: 'Are you sure?'}%><br>
 <%= link_to 'All Tasks', tasks_path %>
  
 
