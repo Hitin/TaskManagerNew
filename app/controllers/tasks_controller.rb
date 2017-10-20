@@ -15,11 +15,16 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
   end
 
-
   def create    
     @task = Task.new(tasks_params)
     @task.save
     redirect_to @task 
+  end
+
+  def update
+    @task = Task.find(params[:id])
+    @task.update(tasks_params)
+    redirect_to @task
   end
 
   private
