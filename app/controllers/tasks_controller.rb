@@ -18,6 +18,7 @@ class TasksController < ApplicationController
   def create
     @task = Task.new(tasks_params)
     if @task.save
+      flash[:notice] = 'Task was successfully created.'
       redirect_to @task
     else
       render 'new'
@@ -27,6 +28,7 @@ class TasksController < ApplicationController
   def update
     @task = Task.find(params[:id])
     if @task.update(tasks_params)
+      flash[:notice] = 'Task was successfully edited.'
       redirect_to @task
     else
       render 'edit'
