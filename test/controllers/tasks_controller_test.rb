@@ -9,9 +9,8 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
     get tasks_url
     assert_response :success
 
-    assert_equal "index", @controller.action_name
-    #assert_equal "application/x-www-form-urlencoded", @request.media_type
-    assert_match "Taskmanager", @response.body
+    assert_equal 'index', @controller.action_name
+    assert_match 'Taskmanager', @response.body
   end
 
   test 'should create Task' do
@@ -46,7 +45,7 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
                    }
     assert_redirected_to task_url @task
     @task.reload
-    assert_equal "New text", @task.title
+    assert_equal 'New text', @task.title
     assert_equal 'Task was successfully edited.', flash[:notice]
   end
 
