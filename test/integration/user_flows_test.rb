@@ -1,7 +1,13 @@
 require 'test_helper'
 
 class UserFlowsTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @user = create(:user)
+  end
+  test 'can see link on create new user' do
+    get '/'
+    assert_select 'a', 'Users'
+  end
+
+ 
 end
