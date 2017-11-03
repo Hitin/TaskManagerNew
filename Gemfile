@@ -45,6 +45,7 @@ group :development, :test do
   gem "factory_bot_rails", "~> 4.0"
   gem 'selenium-webdriver'
   gem 'simplecov', :require => false
+  gem 'rails-controller-testing'
 end
 
 group :development do
