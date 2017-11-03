@@ -1,0 +1,10 @@
+<h1>New User</h1>
+<% form_for @user, url: {action: 'new'} do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
