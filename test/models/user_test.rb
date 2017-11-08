@@ -6,4 +6,3 @@ class UserTest < ActiveSupport::TestCase
     assert_not user.save, 'Name must be filled in'
   end
 end
-
