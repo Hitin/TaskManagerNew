@@ -2,6 +2,8 @@ language: ruby
 rvm:
   - 2.4.1
 before_install: gem install bundler -v 1.15.4
+before_script:
+  - psql -c "CREATE USER petr WITH PASSWORD 'rbk7313';" -U postgres
 env:
   - TESTFOLDER=./
 script: 
