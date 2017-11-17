@@ -9,12 +9,12 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  username: petr
-  password: rbk7313
 
 development:
   <<: *default
   database: taskmanager_development
+  username: petr
+  password: rbk7313
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,8 +22,12 @@ development:
 test:
   <<: *default
   database: taskmanager_test
+  username: petr
+  password: rbk7313
 
 production:
   <<: *default
   database: taskmanager_production
+  username: petr
+  password: rbk7313
   
