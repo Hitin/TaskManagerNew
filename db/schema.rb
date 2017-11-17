@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20171030100704) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "tasks", force: :cascade do |t|
     t.text "title"
     t.datetime "created_at", null: false
