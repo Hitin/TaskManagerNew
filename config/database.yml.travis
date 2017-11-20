@@ -13,7 +13,8 @@ default: &default
 development:
   <<: *default
   database: taskmanager_development
-
+  username: petr
+  password: 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,7 +22,12 @@ development:
 test:
   <<: *default
   database: taskmanager_test
+  username: petr
+  password: 
 
 production:
   <<: *default
   database: taskmanager_production
+  username: petr
+  password: 
+  
