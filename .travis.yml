@@ -7,7 +7,8 @@ services:
   - postgresql
   
 before_script:
-  - psql -c 'create database taskmanager_test; ALTER DATABASE taskmanager_test OWNER TO petr;' -U postgres
+  - psql -c 'create database taskmanager_test;' -U postgres
+  - psql -c 'ALTER DATABASE taskmanager_test OWNER TO petr;' -U postgres
 
 env:
   - TESTFOLDER=./
