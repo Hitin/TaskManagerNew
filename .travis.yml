@@ -7,7 +7,6 @@ services:
   - postgresql
   
 before_script:
-  - cp config/database.yml.travis config/database.yml
   - psql -c 'create database taskmanager_test;' -U postgres
 
 env:
