@@ -7,8 +7,7 @@ services:
   - postgresql
   
 before_script:
-  - psql -c 'create database taskmanager_test;' -U postgres
-  - psql -c "CREATE USER petr WITH PASSWORD 'rbk7313';" -U postgres
+  - psql -c 'create database taskmanager_test; ALTER DATABASE taskmanager_test OWNER TO petr;' -U postgres
 
 env:
   - TESTFOLDER=./
