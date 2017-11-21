@@ -1,11 +1,9 @@
 # README
 Master
-[![Coverage Status](https://coveralls.io/repos/github/Hitin/TaskManagerNew/badge.svg?branch=master)](https://coveralls.io/github/Hitin/TaskManagerNew?branch=master)
-https://travis-ci.org/Hitin/TaskManagerNew.svg?branch=master
-Develop
-[![Coverage Status](https://coveralls.io/repos/github/Hitin/TaskManagerNew/badge.svg?branch=develop)](https://coveralls.io/github/Hitin/TaskManagerNew?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/Hitin/TaskManagerNew/badge.svg?branch=master)](https://coveralls.io/github/Hitin/TaskManagerNew?branch=master) [![Build Status](https://travis-ci.org/Hitin/TaskManagerNew.svg?branch=master)](https://travis-ci.org/Hitin/TaskManagerNew)
 
-https://travis-ci.org/Hitin/TaskManagerNew.svg?branch=develop
+Develop
+[![Coverage Status](https://coveralls.io/repos/github/Hitin/TaskManagerNew/badge.svg?branch=develop)](https://coveralls.io/github/Hitin/TaskManagerNew?branch=develop) [![Build Status](https://travis-ci.org/Hitin/TaskManagerNew.svg?branch=develop)](https://travis-ci.org/Hitin/TaskManagerNew)
 
 Things you may want to cover:
 
